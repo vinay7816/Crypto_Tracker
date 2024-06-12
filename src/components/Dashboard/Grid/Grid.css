@@ -1,0 +1,149 @@
+.grid-container{
+    width: 300px;
+   
+    height: 300px;
+    background-color: var(--darkgrey);
+    display: flex;
+    flex-direction: column;
+   
+    border-radius: 1rem;
+    border: solid 2px var(--darkgrey);
+}
+.grid-container:hover{
+  border: solid 2px var(--green);
+}
+.grid-negative-container{
+    width: 300px;
+   
+    height: 300px;
+    background-color: var(--darkgrey);
+    display: flex;
+    flex-direction: column;
+   
+    border-radius: 1rem;
+    border: solid 2px var(--darkgrey); 
+}
+.grid-negative-container:hover{
+    border: solid 2px var(--red);
+}
+.info-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin:1rem 1.5rem;
+
+}
+.coin-logo{
+    height: 3.5rem;
+    width: 3.5rem;
+}
+.name-logo{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.symbol1{
+    margin: 0;
+    color: var(--white);
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.symbol2{
+    margin: 0;
+    color: var(--grey);
+    font-size: 1rem;
+    text-transform: capitalize;
+    font-weight: light;
+}
+.pricing{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.5rem;
+    margin: 1rem 1.5rem;
+}
+.price-percentage{
+   padding: 0.35rem 1.25rem;
+   text-align: center;
+   font-weight: 600;
+   font-size: 1rem;
+    border-radius: 2rem;
+    min-width: 60px;
+    border: solid 2px var(--green);
+}
+.price-negative{
+    padding: 0.35rem 1.25rem;
+   text-align: center;
+   font-weight: 600;
+   font-size: 1rem;
+    border-radius: 2rem;
+    border: solid 2px var(--red);
+}
+.down-trend{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--red);
+    font-weight: 600;
+    font-size: 1.1rem;
+     border-radius: 50%;
+     border: solid 2px var(--red);
+     height: 2rem;
+    width: 2rem;
+}
+.up-trend{
+    color: var(--green);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 2rem;
+    width: 2rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+     border-radius: 50%;
+     border: solid 2px var(--green);  
+}
+.price-percentage:hover,.up-trend:hover{
+    background-color: var(--green);
+    color: var(--white);
+    transition: all 0.4s;
+}
+.price-negative:hover,.down-trend:hover{
+    background-color: var(--red);
+    color: var(--white);
+    transition: all 0.4s;
+}
+.price-container{
+    margin: 1.5rem;
+    
+}
+.coin-price{
+    font-weight: 600;
+    font-size: 1.2rem;
+   margin: 0;
+}
+.coin-name{
+    font-size: 0.9rem;
+    color: var(--grey);
+}
+.watchlist-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--green);
+    border-radius: 50%;
+    color: var(--green);
+    padding: 0.5rem;
+    height: 1.5rem;
+    width: 1.5rem !important;
+  }
+  
+  .watchlist-icon-red {
+    border: 2px solid var(--red);
+    color: var(--red);
+  }
+

@@ -1,0 +1,13 @@
+.top-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    width: 3rem;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    border-radius: 50%;
+    position: fixed;
+    border: solid 2px var(--blue);
+    margin: 2rem;
+}

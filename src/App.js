@@ -1,23 +1,33 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Dashboard from './Pages/DashboardPage/Dashboard';
+import Home from './Pages/Homepage/Home';
+import Header from './components/Common/Header/Header';
+import Sidebar from './components/Common/Header/Sidebar';
+import Landingpage from './components/LandingPage/Landingpage';
+import { BrowserRouter as Router } from 'react-router-dom';
+import { Routes } from 'react-router-dom';
+import { Route } from 'react-router-dom';
+import Loader from './components/Common/Loader/Loader';
+import Coins from './Pages/Coins/Coins';
+import Comparepage from './Pages/Comparepage/Comparepage';
+import Watchlist from './Pages/Watchlist';
 
 function App() {
   return (
+   
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Header/>
+        <Routes>
+          <Route exact path="/" element={<Home/>}/>
+          <Route exact path="/dashboard" element={ <Dashboard/>}/>
+          <Route exact path="/coin/:id" element={<Coins/>} />
+          <Route exact path="/compare" element={<Comparepage/>}/>
+          <Route exact path="/watchlist" element={<Watchlist/>}/>
+        </Routes>
+      </Router>
+      
     </div>
   );
 }

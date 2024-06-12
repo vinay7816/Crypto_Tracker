@@ -1,0 +1,141 @@
+.Land-flex{
+  display: flex;
+  justify-content: space-between;
+  
+  
+  padding: 0.5rem 3rem;
+ 
+}
+
+.track-crypto,.realtime{
+  font-size: 5.5rem;
+  margin: 0;
+  cursor: pointer;
+}
+.track-crypto{
+  color: var(--white);
+}
+.realtime{
+  color: var(--blue);
+}
+.track-crypto:hover {
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: var(--white);
+  color: var(--black);
+  transition: all 0.3s;
+}
+.info{
+  font-size: 1rem;
+  color: var(--grey);
+}
+.btn-flex{
+  display: flex;
+  justify-content: flex-start;
+  gap: 1.5rem;
+  align-items: center;
+  margin-top: 2rem;
+}
+.Land-image{
+  width: 50%;
+  position: relative;
+  margin-left: auto;
+
+  
+}
+.iphone {
+  position: absolute;
+  right: 80px;
+  
+  
+  width: 300px;
+  z-index: 100;
+}
+.gradient {
+
+  position: absolute;
+  right: 80px;
+  top: 80px;
+  width: 250px;
+}
+@media only screen and (max-width: 1350px) {
+  .track-crypto,.realtime {
+    font-size: 5rem;
+  }
+}
+
+@media only screen and (max-width: 1116px) {
+  .track-crypto,.realtime {
+    font-size: 4rem;
+  }
+
+  .gradient {
+      right: 80px;
+    top: 60px;
+    width: 200px;
+  }
+  .iphone {
+      right: 70px;
+    width: 250px;
+  }
+}
+@media only screen and (max-width: 913px) {
+  .track-crypto,.realtime {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  
+  .track-crypto,.realtime {
+    font-size: 3rem;
+  }
+  .Land-flex {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+
+  .track-crypto,.realtime,
+  .info {
+    text-align: center;
+  }
+
+  .info {
+    font-size: 0.8rem;
+  }
+
+  .btn-flex {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .Land-image {
+     
+    margin-top: 3rem;
+    margin-right: auto;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .gradient,
+  .iphone {
+      
+   left: 100px;
+  }
+
+  .iphone {
+    left: 30px;
+  }
+}
+@media only screen and (max-width: 536px) {
+  .gradient,
+  .iphone {
+      
+   left: 80px;
+  }
+
+  .iphone {
+    left: 10px;
+  }
+}   
