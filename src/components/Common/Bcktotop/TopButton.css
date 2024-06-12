@@ -11,3 +11,19 @@
     border: solid 2px var(--blue);
     margin: 2rem;
 }
+@media(max-width:800px){
+
+.top-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    width: 2rem;
+    bottom: 5.5rem;
+    right: 1rem;
+    border-radius: 50%;
+    position: fixed;
+    border: solid 2px var(--blue);
+    margin: 1rem;
+}
+}

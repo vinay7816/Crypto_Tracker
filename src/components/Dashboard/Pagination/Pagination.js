@@ -1,10 +1,9 @@
-import React from 'react'
+import React from 'react';
 import Pagination from '@mui/material/Pagination';
-import "./Pagination.css"
-const Paginationcomponent = ({page, handlePageChange}) => {
-   
+import "./Pagination.css";
+
+const Paginationcomponent = ({ page, handlePageChange }) => {
   return (
-   
     <div className="pagination-div">
       <Pagination
         sx={{
@@ -15,7 +14,7 @@ const Paginationcomponent = ({page, handlePageChange}) => {
           "& .MuiPaginationItem-text:hover": {
             backgroundColor: "transparent !important",
           },
-          "& .Mui-selected  ": {
+          "& .Mui-selected": {
             backgroundColor: "var(--blue)",
             borderColor: "var(--blue)",
           },
@@ -28,9 +27,7 @@ const Paginationcomponent = ({page, handlePageChange}) => {
         onChange={handlePageChange}
       />
     </div>
-
-
-  )
-}
+  );
+};
 
 export default Paginationcomponent;
